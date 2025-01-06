@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Madlib</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        #madlib {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Christmas Madlib</h1>
+    <p>Fill out the fields below for a jolly good story!</p>
+
+    <form id="madlib-form">
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun" required>
+
+        <label for="noun2">Noun2:</label>
+        <input type="text" id="noun2" name="noun2" required>
+
+        <label for="noun3">Noun3:</label>
+        <input type="text" id="noun3" name="noun3" required>
+
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" name="verb" required>
+
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" name="adjective" required>
+
+        <label for="noun4">Noun4:</label>
+        <input type="text" id="noun4" name="noun4" required>
+
+        <label for="adjective2">Adjective2:</label>
+        <input type="text" id="adjective2" name="adjective2" required>
+
+        <label for="adjective3">Adjective3:</label>
+        <input type="text" id="adjective3" name="adjective3" required>
+
+        <label for="pluralnoun">pluralnoun:</label>
+        <input type="text" id="pluralnoun" name="pluralnoun" required>
+
+        <button type="button" onclick="generateMadlib()">Generate Madlib</button>
+    </form>
+
+    <div id="madlib"></div>
+
+    <script>
+        function generateMadlib() {
+            const noun = document.getElementById('noun').value;
+            const noun2 = document.getElementById('noun2').value;
+            const noun3 = document.getElementById('noun3').value;
+            const verb = document.getElementById('verb').value;
+            const adjective = document.getElementById('adjective').value;
+            const noun4 = document.getElementById('noun4').value;
+            const adjective2 = document.getElementById('adjective2').value;
+            const adjective3 = document.getElementById('adjective3').value;
+            const pluralnoun = document.getElementById('pluralnoun').value;
+
+            const story = `Toyland, ${noun} -land, Little ${noun2} and ${noun3} land, While you ${verb} within it, You are ever ${adjective} there. ${noun4} 's joy land, ${adjective2} , ${adjective3} Toyland! Once you pass its ${pluralnoun} , You can never return again.`;
+
+            document.getElementById('madlib').textContent = story;
+        }
+    </script>
+</body>
+</html>
