@@ -12,6 +12,9 @@
     <script>
         var direction = 'right';
         var offset = 0;
+        var intervalLength = 30;
+        var clicks = 0;
+
 
         $("#heading").offset({ left: offset, top: offset });
         
@@ -48,8 +51,21 @@
 
 
         };
-
         setInterval(moveHeading, 30);
+
+        var Intervalid = setInterval(moveHeading, intervalLength);
+
+        $("#heading").click(function () {
+            clearInterval(setInterval(moveHeading, intervalLength));
+            intervalLength /= 2;
+            clicks++;
+
+        if (clicks > 10) {
+            $("#heading").text("VICTORY!")
+        } else {
+            setInterval(moveHeading, intervalLength)
+        }
+    })
     </script>
 </body>
 </html>
