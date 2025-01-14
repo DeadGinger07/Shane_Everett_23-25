@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "Opera",
             "request": "launch",
             "name": "Open Madlib.html",
             "file": "d:\\Shane\\Madlib.html"
