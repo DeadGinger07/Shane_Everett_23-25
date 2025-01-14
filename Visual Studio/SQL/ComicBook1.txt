@@ -1,0 +1,10 @@
+create table comicbooks(
+IssueID int,
+Name char(15),
+CoverPrice bigint(7),
+MarketPrice bigint(7),
+AuthorLastName char(25),
+AuthorFirstName char(25),
+ArtistLastName char(25),
+ArtistFirstName char(25)
+

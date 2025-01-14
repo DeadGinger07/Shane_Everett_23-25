@@ -1,0 +1,13 @@
+favorite_hobbies = ['Jeff, youtube',
+ 'Timmy, gaming',
+ 'Jake, reading',
+ 'jordan, collecting',
+ 'John, sleeping',
+ 'Jimmy, eating']
+
+favorite_food = ['Jeff, pizza',
+ 'Timmy, spaghetti',
+ 'Jake, taco',
+ 'jordan, burger',
+ 'John, hot dog',
+ 'Jimmy, chicken']

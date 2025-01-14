@@ -1,0 +1,8 @@
+create table ElectronicsInventory(
+ProductId int,
+ProductName char(25),
+PurchasePrice float(7),
+Manufacturer char(25),
+QuantityInStock int,
+TotalSales float(25),
+Notes char(255))

@@ -1,0 +1,6 @@
+create table grocerystorelist(
+ItemName char(14),
+QuantityOnHand int(4),
+QuantitySold int(4),
+CostPerItem  float(10),
+TotalSales float(25))

@@ -1,0 +1,12 @@
+Insert Into ElectronicsInventory
+Values
+(1,'Playstation 2',150.00,'Sony',25,10,'Our vendor is ebay'),
+(2,'Xbox 360 Elite',174.99,'Microsoft',20,5,'Our vendor is ebay'),
+(3,'Nintendo Switch',300.00,'Nintendo',30,15,'Our vendor is Nintendo'),
+(4,'Nintendo Switch Lite',200.00,'Nintendo',40,13,'Our vendor is Nintendo'),
+(5,'Sega Dreamcast',179.00,'Sega',10,3,'Our vendor is GameStop'),
+(6,'Sega Saturn',199.99,'Sega',12,0,'Our vendor is Tacota Robertson
+Electronics')
+(7,'3DO',349.99,'Panasonic',10,2,'Our vendor is Tacota Robertson Electronics')
+(8,'V.Smile',50.00,'Vtech',3,0,'Our vendor is Tacota Robertson Electronics')
+select * from ElectronicsInventory ei
