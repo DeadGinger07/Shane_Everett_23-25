@@ -11,8 +11,8 @@
     var Ball = function () {
       this.x = 100;
       this.y = 100;
-      this.xSpeed = -2;
-      this.ySpeed = 3;
+      this.xSpeed = (Math.random() * 10) - 5;
+      this.ySpeed = (Math.random() * 10) - 5;
     };
 
     var circle = function (x, y, radius, fillCircle) {
