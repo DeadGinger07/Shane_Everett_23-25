@@ -17,6 +17,7 @@
 
         var circle = function (x, y, radius, fillCircle) {
             ctx.beginPath();
+            ctx.fillStyle = "red";
             ctx.arc(x, y, radius, 0, Math.PI * 2, false);
             if (fillCircle) {
                 ctx.fill();
